@@ -81,6 +81,7 @@ class PostViewModel @Inject constructor(
             }
         }
 
+
     private val dataDb: LiveData<FeedModel> = auth.authStateFlow
         .flatMapLatest { (myId, _) ->
             repository.dataDb

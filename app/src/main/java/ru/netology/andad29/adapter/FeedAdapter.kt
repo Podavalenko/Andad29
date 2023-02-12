@@ -144,7 +144,6 @@ class PostViewHolder(
     }
 }
 
-
 class FeedItemDiffCallback : DiffUtil.ItemCallback<FeedItem>() {
     override fun areItemsTheSame(oldItem: FeedItem, newItem: FeedItem): Boolean {
         if (oldItem::class != newItem::class) {

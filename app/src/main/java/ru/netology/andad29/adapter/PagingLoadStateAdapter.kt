@@ -28,7 +28,6 @@ class PagingLoadStateAdapter(
         holder.bind(loadState)
     }
 
-
     class LoadStateViewHolder(
         private val binding: LoadStateBinding,
         private val onInteractionListener: OnInteractionListener,

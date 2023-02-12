@@ -163,7 +163,6 @@ class FeedFragment : Fragment() {
         binding.swipeRefreshLayout.setOnRefreshListener {
             adapter.refresh()
         }
-
         return binding.root
     }
 }

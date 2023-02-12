@@ -19,4 +19,5 @@
         android:text="@string/retry_loading"
         />
 
+
 </LinearLayout>
