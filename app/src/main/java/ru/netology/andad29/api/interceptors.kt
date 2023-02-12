@@ -21,4 +21,5 @@ fun authInterceptor(auth: AppAuth) = fun(chain: Interceptor.Chain): Response {
         return chain.proceed(newRequest)
     }
     return chain.proceed(chain.request())
+
 }

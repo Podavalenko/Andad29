@@ -18,5 +18,4 @@ object ApiServiseModule {
         return retrofit(okhttp(loggingInterceptor(), authInterceptor(auth)))
             .create(ApiService::class.java)
     }
-
 }

@@ -39,4 +39,5 @@ class EditPostFragment : Fragment() {
         }
         return binding.root
     }
+
 }

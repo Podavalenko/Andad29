@@ -36,4 +36,5 @@ class RefreshPostsWorker @AssistedInject constructor(
             Result.retry()
         }
     }
+
 }

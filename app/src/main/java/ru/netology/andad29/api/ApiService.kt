@@ -91,4 +91,5 @@ interface ApiService {
         @Field("login") login: String,
         @Field("pass") pass: String
     ): Response<AuthState>
+
 }

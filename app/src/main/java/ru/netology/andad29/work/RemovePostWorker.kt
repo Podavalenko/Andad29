@@ -36,4 +36,5 @@ class RemovePostWorker @AssistedInject constructor(
             Result.retry()
         }
     }
+
 }

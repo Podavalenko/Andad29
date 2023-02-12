@@ -31,5 +31,4 @@ class ImageFragment : Fragment() {
         }
         return binding.root
     }
-
 }

@@ -20,6 +20,7 @@ import ru.netology.andad29.view.load
 import ru.netology.andad29.view.loadCircleCrop
 import ru.netology.andad29.viewmodel.PostViewModel
 
+
 @AndroidEntryPoint
 class CardPostFragment : Fragment() {
 

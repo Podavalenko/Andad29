@@ -137,5 +137,6 @@ class NewPostFragment : Fragment() {
             }
         }
     }
+
 }
 

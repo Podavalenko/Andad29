@@ -164,7 +164,6 @@ class FeedFragment : Fragment() {
             adapter.refresh()
         }
 
-
         return binding.root
     }
 }

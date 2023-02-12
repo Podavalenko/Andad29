@@ -47,4 +47,5 @@ class SignUpFragment : Fragment() {
         }
         return binding.root
     }
+
 }

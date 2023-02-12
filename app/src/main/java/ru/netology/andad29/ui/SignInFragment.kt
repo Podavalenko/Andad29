@@ -36,4 +36,5 @@ class SignInFragment : Fragment() {
         }
         return binding.root
     }
+
 }
