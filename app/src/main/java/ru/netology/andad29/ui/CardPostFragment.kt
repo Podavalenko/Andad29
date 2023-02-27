@@ -7,10 +7,11 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.PopupMenu
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import dagger.hilt.android.AndroidEntryPoint
-import ru.netology.andad29.BuildConfig
+//import ru.netology.andad29.BuildConfig
 import ru.netology.andad29.R
 import ru.netology.andad29.databinding.FragmentCardPostBinding
 import ru.netology.andad29.dto.AttachmentType
@@ -28,9 +29,7 @@ class CardPostFragment : Fragment() {
         var Bundle.textArg: String? by StringArg
     }
 
-    private val viewModel: PostViewModel by viewModels(
-        ownerProducer = ::requireParentFragment
-    )
+    private val viewModel: PostViewModel by activityViewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater,
