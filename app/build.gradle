@@ -14,7 +14,7 @@ android {
     buildToolsVersion "30.0.3"
 
     defaultConfig {
-        applicationId "ru.netology.nmedia"
+        applicationId "ru.netology.andad29"
         minSdkVersion 25
         targetSdkVersion 33
         versionCode 1
