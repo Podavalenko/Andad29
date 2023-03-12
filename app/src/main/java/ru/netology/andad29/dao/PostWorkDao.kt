@@ -18,4 +18,7 @@ interface PostWorkDao {
     @Query("DELETE FROM PostWorkEntity WHERE id=:id")
     suspend fun removeById(id: Long)
 
+    @Query("DELETE FROM PostRemoteKeyEntity")
+    suspend fun removeAll()
+
 }

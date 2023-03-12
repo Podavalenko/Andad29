@@ -45,6 +45,7 @@ class PostRepositoryImpl @Inject constructor(
         private const val PAGE_SIZE = 15
     }
 
+
     @OptIn(ExperimentalPagingApi::class)
     override val dataPaging: Flow<PagingData<Post>> = Pager(
         config = PagingConfig(PAGE_SIZE),
