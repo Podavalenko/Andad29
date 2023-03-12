@@ -10,6 +10,7 @@ interface PostRepository {
     val dataPaging: Flow<PagingData<Post>>
     val dataDb: Flow<List<Post>>
 
+
     suspend fun getAll()
     suspend fun getLatest()
     fun getNewerCount(id: Long): Flow<Int>

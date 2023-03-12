@@ -3,6 +3,9 @@ package ru.netology.andad29.repository
 import androidx.core.net.toFile
 import androidx.core.net.toUri
 import androidx.paging.*
+import androidx.paging.Pager
+import androidx.paging.PagingConfig
+import androidx.paging.PagingData
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.*

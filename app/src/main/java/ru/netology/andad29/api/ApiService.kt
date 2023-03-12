@@ -1,5 +1,6 @@
 package ru.netology.andad29.api
 
+import ru.netology.andad29.BuildConfig
 import okhttp3.Interceptor
 import okhttp3.MultipartBody
 import okhttp3.OkHttpClient
@@ -31,6 +32,7 @@ fun retrofit(okhttp: OkHttpClient): Retrofit =
         .build()
 
 interface ApiService {
+
 
     @GET("posts/latest")
     suspend fun getLatest(@Query("count") count: Int): Response<List<Post>>
