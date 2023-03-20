@@ -7,7 +7,6 @@ import android.view.ViewGroup
 import androidx.activity.addCallback
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import com.google.firebase.messaging.ktx.BuildConfig
 import dagger.hilt.android.AndroidEntryPoint
 import ru.netology.andad29.BuildConfig
 import ru.netology.andad29.ui.NewPostFragment.Companion.textArg
