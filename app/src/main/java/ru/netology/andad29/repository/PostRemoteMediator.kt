@@ -53,20 +53,36 @@ class PostRemoteMediator(
 
             db.withTransaction {
                 when (loadType) {
-                    LoadType.REFRESH -> {
-                        postRemoteKeyDao.removeAll()
-                        postRemoteKeyDao.insert(
-                            listOf(
-                                PostRemoteKeyEntity(
-                                    type = PostRemoteKeyEntity.KeyType.AFTER,
-                                    id = body.first().id,
-                                ),
-                                PostRemoteKeyEntity(
-                                    type = PostRemoteKeyEntity.KeyType.BEFORE,
-                                    id = body.last().id,
-                                ),
-                            )
-                        )
+                   // LoadType.REFRESH -> {
+                        //postRemoteKeyDao.insert(
+                           // listOf(
+                               // PostRemoteKeyEntity(
+                                 //   type = PostRemoteKeyEntity.KeyType.AFTER,
+                                  //  id = body.first().id,
+                               // ),
+                                //PostRemoteKeyEntity(
+                                  //  type = PostRemoteKeyEntity.KeyType.BEFORE,
+                                   // id = body.last().id,
+                              //  ),
+                           // )
+                       // )
+
+                            LoadType.REFRESH -> {
+                                postRemoteKeyDao.insert(
+                                    PostRemoteKeyEntity(
+                                        PostRemoteKeyEntity.KeyType.AFTER,
+                                        id = body.first().id
+                                    )
+                                )
+                                if (postRemoteKeyDao.isEmpty()) {
+                                    postRemoteKeyDao.insert(
+                                        PostRemoteKeyEntity(
+                                            PostRemoteKeyEntity.KeyType.BEFORE,
+                                            id = body.last().id
+                                        )
+                                    )
+                                }
+
                         postDao.readAll()
                     }
                     LoadType.PREPEND -> {
